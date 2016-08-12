@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SUPER ___ Sedona</title>
+  <link rel="stylesheet" href="super-css/normalize.css">
+  <link rel="stylesheet" href="super-css/main2.css">
+  <link rel="stylesheet" href="super-css/symbols-sedona.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic"> </head>
+
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <nav class="main-menu">
+        <a class="main-menu__link link" href="#">Информация</a>
+        <a class="main-menu__link link" href="#">Фото и видео</a>
+        <a class="main-menu__link link logo" href="#"></a>
+        <a class="main-menu__link link" href="#">Карта Штата</a>
+        <a class="main-menu__link link" href="./hotels.html">Гостиницы</a>
+      </nav>
+    </header>
+    <div class="intro"></div>
+    <main>
+      <div class="column-100">
+        <h1 class="title main-title">Седона — небольшой городок в Аризоне,<br>  заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+      </div>
+      <div class="row row--blue">
+        <div class="column-33">
+          <h2 class="title--white">Настоящий<br> городок</h2>
+          <p class="column-33__number">— №1 —</p>
+          <p>Седона не атракцион для туристов,
+            <br> там течет своя жизнь</p>
+        </div>
+        <div class="column-66--right"></div>
+      </div>
+      <div class="row">
+        <div class="column-33"><img class="icon-features" src="img/icon-house.png" height="72" width="75" alt="Жилье">
+          <h2 class="title">Жилье</h2>
+          <p>Рекомендуем пожить в настоящем
+            <br> мотеле, все как в кино!</p>
+        </div>
+        <div class="column-33"> <img class="icon-features" src="img/icon-food.png" height="72" width="75" alt="Еда">
+          <h2 class="title">Еда</h2>
+          <p>Всегда заказывай фирменный бургер,
+            <br> вы не разочаруетесь!</p>
+        </div>
+        <div class="column-33"> <img class="icon-features" src="img/icon-souvenir.png" height="76" width="64" alt="Сувениры">
+          <h2 class="title">Сувениры</h2>
+          <p>Не только китайского,
+            <br> но и местного производства!</p>
+        </div>
+      </div>
+      <div class="row row--blue">
+        <div class="column-66--left"></div>
+        <div class="column-33">
+          <h2 class="title--white">Там есть<br> мост дьявола</h2>
+          <p class="column-33__number">— №2 —</p>
+          <p>Да, по нему можно пройти!
+            <br> Если конечно вы осмелитесь.</p>
+        </div>
+      </div>
+      <div class="row row--grey">
+        <div class="column-33">
+          <h2 class="title">Небольшая<br> площадь</h2>
+          <p class="column-33__number">— №3 —</p>
+          <p>Все достопримечательности
+            <br> находятся очень близко</p>
+        </div>
+        <div class="column-33">
+          <h2 class="title">Красивая<br> дорога</h2>
+          <p class="column-33__number">— №4 —</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем
+            <br> не скучно!</p>
+        </div>
+        <div class="column-33">
+          <h2 class="title">Мало<br> туристов</h2>
+          <p class="column-33__number">— №5 —</p>
+          <p>Большинство едет в Гранд-Каньон и
+            <br> толпится там</p>
+        </div>
+      </div>
+      <div class="column-100 column-100--reservation">
+        <h3 class="reservation-title">Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="search-btn">Поиск гостиниц в Седоне</button>
+        <div class="modal-content">
+          <form class="form-search" action="#">
+            <div class="form-search__line">
+              <label class="form-search__label" for="arrival-date">Дата заезда: </label>
+              <input class="form-search__input-text" type="text" id="arrival-date" value="24 Апреля 2014"><i class="icon-calendar"></i></div>
+            <div class="form-search__line">
+              <label class="form-search__label" for="departure-date">Дата выезда: </label>
+              <input class="form-search__input-text" type="text" id="departure-date" value="4 июля 2014"><i class="icon-calendar"></i></div>
+            <div class="form-search__line">
+              <label class="form-search__label">Взрослые: </label>
+              <div class="form-search__calc">
+                <button class="form-search__qty-btn" type="button"><i class="icon-minus"></i></button>
+                <div class="form-search__result">2</div>
+                <button class="form-search__qty-btn" type="button"><i class="icon-plus"></i></button>
+              </div>
+              <label class="form-search__label form-search__label--align-right">Дети: </label>
+              <div class="form-search__calc">
+                <button class="form-search__qty-btn" type="button"><i class="icon-minus"></i></button>
+                <div class="form-search__result">0</div>
+                <button class="form-search__qty-btn" type="button"><i class="icon-plus"></i></button>
+              </div>
+            </div>
+            <input class="form-search__submit" type="submit" value="Найти"> </form>
+        </div>
+        
+      </div>
+      <div><img src="http://placehold.it/1280x300" alt="Карта местности"></div>
+    </main>
+    <footer class="footer">
+      <div class="hashtag">#VISITSEDONA</div>
+      <div class="social">
+        <a class="social-btn icon-twitter" href="/"></a>
+        <a class="social-btn icon-facebook" href="/"></a>
+        <a class="social-btn icon-youtube" href="/"></a>
+      </div>
+      <div class="copyright">Website by <div class="icon-author"></div> for <div class="icon-html-academy"></div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    var link = document.querySelector(".search-btn");
+    var popup = document.querySelector(".modal-content");
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.toggle("modal-content--visible");
+    });
+  </script>
+</body>
+
+</html>

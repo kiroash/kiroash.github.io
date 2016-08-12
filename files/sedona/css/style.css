@@ -1,0 +1,57 @@
+body {
+  font-family: 'PT Sans', sans-serif; 
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #f0f0f0;
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  background-color: #fff;
+  min-width: 768px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid blue;
+}
+.main-menu {
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid blue;
+}
+.main-menu__item {  
+  display: table-cell;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+  vertical-align: top;
+}
+.main-menu__item a {
+  padding: 15px 0 15px 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid black;
+}
+.logo {
+  background: url("http://barbershop-borodinski.ru/kiro/sedona/img/img_logo.png") no-repeat 50%;
+}
+.intro {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 65px;
+  width: 100%;
+  min-height: 500px;
+  background-color: #bcc5cc;
+  background-image: url("http://barbershop-borodinski.ru/kiro/sedona/img/img_intro_bottom.png"),
+                    url("http://barbershop-borodinski.ru/kiro/sedona/img/intro_text.png"),
+                    url("http://barbershop-borodinski.ru/kiro/sedona/img/bg_intro.png");
+  background-repeat: no-repeat;  
+  background-size: 100%,auto 340px, cover;
+  background-position: bottom, center, 50% 20%;
+}

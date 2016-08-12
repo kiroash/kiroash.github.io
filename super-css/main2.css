@@ -1,0 +1,997 @@
+* {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    outline: 1px dashed blue;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    color: #333;
+    background-color: #f2f2f2;
+}
+.link {
+    text-decoration: none;
+
+    color: #000;
+}
+.title {
+    font-size: 21px;
+    font-weight: 700;
+
+    color: #000;
+}
+.title--white {
+    color: #fff;
+}
+.reservation-title {
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #000;
+}
+.sort {
+    font-size: 12px;
+
+    margin-right: 40px;
+    margin-left: 50px;
+}
+.sort-type {
+    font-size: 12px;
+
+    margin: 15px;
+
+    color: #cacaca;
+    border-bottom: 1px dotted #cacaca;
+}
+.sort-type--active {
+    color: #81b3d2;
+    border-bottom: none;
+    /*padding-bottom: 1px;*/ /* Для выравнивания после применения border-bottom: 1px */
+}
+.count {
+    font-size: 21px;
+    font-weight: 700;
+
+    margin: 8px;
+
+    color: #000;
+}
+
+
+
+
+
+/*==================================================
+      Блок центровщик
+==================================================*/
+
+
+
+
+
+.wrapper {
+    min-width: 768px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    background-color: #fff;
+    box-shadow: 0 5px 15px 5px rgba(0,1,1,.2);
+}
+
+
+
+
+
+/*==================================================
+      Главное меню
+==================================================*/
+
+
+
+
+
+.main-menu {
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+.main-menu__link {
+    font-weight: 700;
+
+    display: flex;
+
+    width: 20%;
+    height: 56px;
+
+            justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+}
+.main-menu__link:hover {
+    color: #81b3d2;
+}
+.main-menu__link:active {
+    color: #cacaca;
+}
+/*.main-menu__link--active {
+
+}*/
+.logo {
+    overflow: visible;
+
+    height: 70px;
+
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+
+
+
+/*==================================================
+      Интро
+==================================================*/
+
+
+
+
+
+.intro {
+    height: 508px;
+    margin-top: -14px;
+
+    background-color: #bcc5cc;
+    background-image: url('../img/intro-bottom.png'),
+    url('../img/intro-text.png'),
+    url('../img/intro-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom, center, 0 20%;
+    background-size: 100%, auto, cover;
+}
+
+
+
+
+
+/*==================================================
+      Форма поиска гостиниц
+==================================================*/
+
+
+
+
+
+.hotels-search {
+    min-width: 768px;
+    max-width: 1280px;
+    height: 1500px;
+}
+/*******************     Шапка с фильтром     *******************/
+.hotels-search__header {
+    display: flex;
+    flex-direction: row;
+
+    height: 86px;
+    margin-left: 72px;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hotels-search::after {
+    display: table;
+    clear: both;
+
+    content: '';
+}
+/*******************     Блок с выбором "радио"" и слайдером     *******************/
+.hotels-search__settings {
+
+    height: 218px;
+    margin-top: -14px;
+
+    background-color: #bcc5cc;
+    background-image: url('../img/intro-bg-blur.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    align-items: center;
+}
+.option-selector__title {
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #fff;
+}
+/*******************     Радиобаттоны     *******************/
+.option-selector__radio {
+    margin-left: 6.3%;
+    margin-top: 28px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.option-selector__radio:first-child {
+    margin-right: 3%;
+}
+.option-selector__item {
+    position: relative;
+    height: 22px;
+    font-size: 14px;
+    padding: 24px 0 24px 40px;
+    color: #fff;
+}
+/*******************     Слайдер     *******************/
+.option-selector__range {
+    float: right;
+    margin-right: 6.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 318px;
+    margin-top: 28px;
+}
+.range-controls {
+    position: relative;
+
+    overflow: hidden;
+    
+    width: 318px;
+    height: 21px;
+    margin-bottom: 23px;
+}
+.scale {
+    height: 2px;
+    margin-top: 10px;
+
+    background-color: #918382;
+}
+.bar {
+    width: 263px;
+    height: 2px;
+
+    background-color: #fff;
+}
+.price-controls {
+
+    width: 318px;
+    display: flex;
+    
+    height: 36px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 3px;
+
+    align-items: center;
+}
+.min-price {
+    width: 50%;
+    height: 22px;
+
+    border-right: 2px solid white;
+}
+.max-price {
+    width: 50%;
+    height: 22px;
+}
+
+.min-toggle {
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    width: 20px;
+    height: 23px;
+
+    cursor: pointer;
+
+    background: url(../img/main-sprites.png) no-repeat;
+    background-position: -57px -25px;
+}
+.max-toggle {
+    position: absolute;
+    top: 0px;
+    left: 253px;
+
+    width: 20px;
+    height: 23px;
+
+    cursor: pointer;
+
+    background: url(../img/main-sprites.png) no-repeat;
+    background-position: -1px -50px;
+}
+/*******************     Кнопка подтверждения     *******************/
+.option-selector__range-submit {
+    display: flex;
+
+    width: 137px;
+    height: 36px;
+
+    text-align: center;
+
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 2px;
+
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hotels-search__result {
+    display: flex;
+    flex-direction: column;
+}
+.results__item {
+    display: flex;
+    margin-left: 72px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #e5e5e5;
+}
+.results__info {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: wrap;
+    width: 258px;
+    height: 90px;
+}
+.info__title {
+    font-size: 21px;
+    line-height: 70%;
+    height: 21px;
+    width: 100%;
+    flex: 100%;
+}
+.info__hotel-type,
+.info__btn-more {
+    width: 110px;
+    flex: 40%;
+}
+.info__hotel-price,
+.info__btn-reserve {
+    width: 140px;
+    flex: 60%;
+}
+.info__btn-more,
+.info__btn-reserve {
+    flex: 59%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+}
+.info__btn-more {
+    margin-right: 2px;
+    background-color: #81b3d2;
+}
+.info__btn-reserve {
+    margin-left: 2px;
+    background-color: #766357;
+}
+.hotels-photo {
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 30px;
+    width: 135px;
+    height: 90px;
+}
+.hotels-photo--1 {
+    background: #e5e5e5 url(../img/photo-hotels-1.jpg) no-repeat 50%;
+}
+.hotels-photo--2 {
+    background: #e5e5e5 url(../img/photo-hotels-2.jpg) no-repeat 50%;
+}
+.hotels-photo--3 {
+    background: #e5e5e5 url(../img/photo-hotels-3.jpg) no-repeat 50%;
+}
+
+
+
+
+/*==================================================
+      Сетка главной страницы
+==================================================*/
+
+
+
+
+/*******************     Колонка во всю ширину     *******************/
+.column-100 {
+    position: relative;
+
+    min-height: 216px;
+
+    text-align: center;
+}
+.column-100--reservation {
+    line-height: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 291px;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+/*******************     Горизонтальный блок и его модификации     *******************/
+.row {
+    display: flex;
+    flex-direction: row;
+
+    min-height: 330px;
+
+    justify-content: center;
+    align-items: center;
+}
+.row--blue {
+    min-height: 200px;
+
+    color: #fff;
+    background-color: #81b3d2;
+}
+.row--grey {
+    display: flex;
+
+    min-height: 256px;
+
+    background-color: #eee;
+
+    justify-content: center;
+    align-items: center;
+}
+/*******************     Колонка 1/3 и ее модификации    *******************/
+.column-33 {
+    max-width: 33.3333%;
+    height: 100%;
+
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.column-66--right {
+    max-width: 66.6666%;
+    min-height: 256px;
+
+    background-image: url('../img/photo-2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+    flex: 2;
+}
+.column-66--left {
+    min-height: 256px;
+
+    background-image: url('../img/photo-1.jpg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+    flex: 2;
+}
+.column-33__number {
+  margin-top: -15px;
+  margin-bottom: 20px;
+    line-height: 21px;
+
+}
+.icon-features {
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+/*==================================================
+      Модальное окно
+==================================================*/
+
+
+
+
+/*******************     КНопка для вызова модального окна     *******************/
+.search-btn {
+    font-size: 21px;
+
+    width: 568px;
+    height: 86px;
+    margin-top: 30px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: 0;
+    background-color: #766357;
+}
+.search-btn:active {
+    padding: 0;
+}
+
+
+
+
+
+/*==================================================
+      Футер
+==================================================*/
+
+
+
+
+
+.footer {
+    display: flex;
+
+    height: 120px;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+/*******************     Хэштег     *******************/
+.hashtag {
+    font-size: 21px;
+    font-weight: 700;
+
+    display: flex;
+
+    color: #000;
+
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+/*******************     Социальные кнопки     *******************/
+.social {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.social-btn {
+    font-size: 19px;
+
+    display: flex;
+
+    width: 46px;
+    height: 48px;
+    margin: 3px;
+
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #81b3d2;
+
+    justify-content: center;
+    align-items: center;
+}
+.social-btn:hover {
+    background-color: #669ec0;
+}
+.social-btn:active {
+    color: rgba(255,255,255,.4);
+    background-color: #5496bd;
+}
+/*******************     Копирайт     *******************/
+.copyright {
+    display: flex;
+
+    color: #000;
+
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.icon-author {
+    width: 26px;
+    height: 30px;
+    margin: 10px;
+
+    background-image: url('../img/footer-icons.png');
+    background-repeat: no-repeat;
+}
+.icon-author:hover {
+    background-position: 0 -46px;
+}
+.icon-author:active {
+    background-position: 0 -94px;
+}
+
+.icon-html-academy {
+    width: 26px;
+    height: 32px;
+    margin: 10px;
+
+    background-image: url('../img/footer-icons.png');
+    background-repeat: no-repeat;
+    background-position: -27px 0;
+}
+.icon-html-academy:hover {
+    background-position: -27px -46px;
+}
+.icon-html-academy:active {
+    background-position: -27px -94px;
+}
+
+
+
+
+
+/*==================================================
+      ВсплывающаЯ форма поиска гостиницы
+==================================================*/
+
+
+
+
+
+/*******************     Модальное окно     *******************/
+.modal-content {
+    position: absolute;
+    left: 50%;
+
+    display: none;
+
+    width: 568px;
+    height: 395px;
+    margin-left: -284px;
+
+    -webkit-transition: ease .7s;
+         -o-transition: ease .7s;
+            transition: ease .7s;
+
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+.modal-content--visible {
+    display: block;
+}
+
+/*******************     Форма поиска     *******************/
+.form-search {
+    display: flex;
+    flex-direction: column;
+
+    width: 458px;
+    margin: 55px;
+}
+.form-search__line {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    height: 38px;
+    margin-bottom: 30px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.form-search__label {
+    font-weight: 700;
+
+    width: 25%;
+    margin: auto;
+
+    text-align: left;
+}
+.form-search__label--align-right {
+    padding-right: 25px;
+
+    text-align: right;
+}
+.form-search__input-text {
+    font-weight: 700;
+
+    display: flex;
+
+    width: 346px;
+    height: 38px;
+    padding-left: 10px;
+
+    text-transform: uppercase;
+
+    border: 0;
+    background-color: #f2f2f2;
+
+    flex: 3;
+    justify-content: center;
+}
+.form-search__input-text:hover {
+  background-color: #ebebeb;
+}
+.form-search__input-text:focus {
+  padding-left: 8px;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+}
+.icon-calendar {
+    font-size: 21px;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    cursor: pointer;
+
+    color: #c2c2c2;
+}
+.icon-calendar:hover {
+    color: #000;
+}
+.icon-calendar:active {
+    color: #81b3d2;
+}
+
+.form-search__calc {
+    display: flex;
+    flex-direction: row;
+
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+}
+.form-search__qty-btn {
+    width: 38px;
+    height: 38px;
+
+    color: #a9a9a9;
+    border: 0;
+    background-color: #f2f2f2;
+}
+.form-search__qty-btn:hover {
+    color: #000;
+}
+.form-search__qty-btn:active {
+    padding: 0;
+
+    color: #81b3d2;
+}
+.form-search__result {
+    font-size: 14px;
+    font-weight: 700;
+
+    display: flex;
+
+    width: 38px;
+    height: 38px;
+
+    background-color: #f2f2f2;
+
+    justify-content: center;
+    align-items: center;
+}
+.form-search__submit {
+    font-size: 21px;
+    font-weight: 700;
+
+    width: 458px;
+    height: 58px;
+    margin-top: 25px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    background: #81b3d2;
+}
+.form-search__submit:hover {
+    background-color: #669ec0;
+}
+.form-search__submit:focus {
+    color: rgba(255,255,255,.4);
+    background-color: #5496bd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*_________________FONT FACE________________*/
+@font-face {
+    font-family: 'symbols-sedona';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../font/symbols-sedona.eot?60737633');
+    src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
+    url('../font/symbols-sedona.woff?60737633') format('woff'),
+    url('../font/symbols-sedona.ttf?60737633') format('truetype'),
+    url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-sedona';
+    src: url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+  }
+}
+*/
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+    font-family: 'symbols-sedona';
+    font-weight: normal;
+    font-style: normal;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    display: inline-block;
+
+    width: 1em;
+    margin-right: .2em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+
+    speak: none;
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-facebook:before {
+    content: '\66';
+} /* 'f' */
+.icon-twitter:before {
+    content: '\74';
+} /* 't' */
+.icon-up-dir:before {
+    content: '\25b2';
+} /* 'в–І' */
+.icon-down-dir:before {
+    content: '\25bc';
+} /* 'в–ј' */
+.icon-star:before {
+    content: '\2605';
+} /* 'в…' */
+.icon-check-off:before {
+    content: '\2610';
+} /* 'вђ' */
+.icon-check-on:before {
+    content: '\2611';
+} /* 'в‘' */
+.icon-calendar:before {
+    content: '\e800';
+} /* 'о Ђ' */
+.icon-plus:before {
+    content: '\e801';
+} /* 'о Ѓ' */
+.icon-minus:before {
+    content: '\e802';
+} /* 'о ‚' */
+.icon-youtube:before {
+    content: '\f39e';
+} /* 'пЋћ' */
+
+
+/*==================================================
+      Спрайты
+==================================================*/
+.sprite {
+    display: block;
+
+    background-image: url(../img/main-sprites.png);
+    background-repeat: no-repeat;
+}
+
+.sprite-icon-checkbox-off {
+    position: absolute;
+    top: 22px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-position: -1px -1px;
+}
+
+.sprite-icon-checkbox-off-disabled {
+    position: absolute;
+    top: 22px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-position: -23px -1px;
+}
+
+.sprite-icon-checkbox-off-hover {
+    position: absolute;
+    top: 22px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-position: -45px -1px;
+}
+
+.sprite-icon-checkbox-on {
+    position: absolute;
+    top: 22px;
+    left: 0;
+
+    width: 26px;
+    height: 22px;
+
+    background-position: -1px -23px;
+}
+
+.sprite-icon-checkbox-on-disabled {
+    position: absolute;
+    top: 22px;
+    left: 0;
+
+    width: 26px;
+    height: 22px;
+
+    background-position: -29px -23px;
+}
+
+.sprite-icon-checkbox-on-hover {
+    position: absolute;
+    top: 22px;
+    left: 0;
+
+    width: 26px;
+    height: 22px;
+
+    background-position: -67px -1px;
+}
+
+.sprite-icon-slider {
+    width: 20px;
+    height: 23px;
+
+    background-position: -57px -25px;
+}
+
+.sprite-icon-slider-hover {
+    width: 20px;
+    height: 23px;
+
+    background-position: -1px -50px;
+}
